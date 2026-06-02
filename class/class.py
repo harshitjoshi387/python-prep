@@ -4,7 +4,10 @@ class Car:
         self.model=model
 
 
+    def fullName(self):
+        return f'{self.brand} {self.model}'
+
+
 my_car=Car("toyota","corolla")
 tata=Car("tata","safari ")
-print(my_car.brand)
-print(tata.model)
+print(tata.fullName())
